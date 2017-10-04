@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'great_vibesregular';
+    src: url('fonts/greatvibes/greatvibes-regular-webfont.woff2') format('woff2'),
+    
+	url('fonts/greatvibes/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'architects_daughterregular';
+    src: url('fonts/architexts/architectsdaughter-webfont.woff2') format('woff2'),
+    url('fonts/architexts/architectsdaughter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('fonts/josefin/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('fonts/joefin/josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+header, section, footer, aside, nav, main, article, figure { display: block;}
+/* pour assurer la compatibilité avec les anciens navigateurs */
+*{
+	box-sizing: border-box; 
+	/*pour que la taille des éléments comprenne margin et padding */
+}
+[class*="col-"] { /* toutes les classes qui ont comme valeur "col-" */
+    float: left;
+}
+.row,nav::after { /* pour placer correctement les éléments suivants */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	
+body{
+	background:#ffdab3;
+	font-size:100%;
+}
+header {
+	color:red;
+	height:110px;
+	width: 400px;
+}
+header h1{
+	font-size: 2.0em;
+}
+#titre{	
+padding-left:10px;
+font-family:great_vibesregular,"Trebuchet MS",sans-serif;
+}
+nav ul {
+	list-style-type:none;
+	margin:auto;
+	padding-left:0px;
+}
+nav li {
+	float:left;
+	width:100px;
+	text-align: center;
+	border: 1px solid black;
+	margin-left:5px;
+	background:#ffc299;
+}
+nav a{
+	text-decoration:none;
+	font-weight:bold;
+}
+nav a:link, nav a:visited{
+	color:black;
+}
+nav li:hover{
+	color:red;
+	text-shadow:1px 1px gray;
+	background:#d4fecd;
+}
+section {
+	margin:10px;
+}
+canvas {
+	border:1px solid #000000;
+}
+#canvasAnim {
+	padding:5px;	
+}
+article {
+	font-family:josefin_sansregular, Arial, sans-serif;
+	font-size:1.2em;
+	text-align:left;
+	overflow:auto;
+	padding: 1em;
+}
+p.premierParagraphe::first-letter{
+	font-family:great_vibesregular,"Trebuchet MS",sans-serif;
+	font-size:1.5em;
+	font-weight:bold;
+	color:red;
+	text-shadow:2px 1px gray;
+	letter-spacing:10px;
+	line-height:0.8;
+	background-color:lightblue;
+}
